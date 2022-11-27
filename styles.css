@@ -1,0 +1,5 @@
+.border {
+  border-bottom: 1px solid hsl(233, 8%, 79%);
+  padding-bottom: 1px;
+  margin-top: 25px;
+}
