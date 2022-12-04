@@ -13,12 +13,12 @@
 }
 
 .navbar {
-  background-color: rgb(143, 143, 143);
+  background-color: rgb(33, 29, 29);
 }
 
 a.nav-link {
   color: white;
-  margin-left: 5rem;
+  /* margin-left: 0.5rem; */
 }
 
 .card {
