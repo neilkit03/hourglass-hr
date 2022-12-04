@@ -16,15 +16,24 @@
   background-color: rgb(33, 29, 29);
 }
 
+.hr-logo {
+  text-decoration: none;
+  color: white;
+}
+
 a.nav-link {
   color: white;
   /* margin-left: 0.5rem; */
 }
 
-a:hover {
-  background-color: yellow;
+.nav-link:hover {
+  color: yellow;
 }
 
 .card {
   max-height: 100;
+}
+
+.stretched-link:hover {
+  color: red;
 }
