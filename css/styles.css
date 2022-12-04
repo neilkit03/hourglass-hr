@@ -21,6 +21,10 @@ a.nav-link {
   /* margin-left: 0.5rem; */
 }
 
+a:hover {
+  background-color: yellow;
+}
+
 .card {
   max-height: 100;
 }
