@@ -113,11 +113,18 @@ a.nav-link {
 
 /* leave Form */
 
+.row {
+  color: teal;
+}
+
 .infoBox-sub1 {
   width: 300px;
   font-size: 20px;
   margin-right: 10px;
   padding-left: 15px;
+  background-color: teal;
+  border-radius: 10px;
+  color: white;
 }
 
 .infoBox-sub2 {
