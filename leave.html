@@ -123,8 +123,119 @@
     </header>
     <section>
       <div class="container">
-        <div class="row mb-5" style="color: green">
+        <div class="row mb-5">
           <h3>Leave Application Form</h3>
+        </div>
+        <div class="infoBox d-inline-flex">
+          <div class="infoBox-sub1">
+            <p><strong>Available Leave Credits</strong></p>
+            <p><strong>Current Leave Credits</strong></p>
+          </div>
+          <div class="infoBox-sub2">
+            <h3>Leave Type</h3>
+            <select class="selectpicker" data-style="btn-primary">
+              <option>Select Leave Type</option>
+              <option>Vacation</option>
+              <option>Sick</option>
+            </select>
+
+            <br /><br /><br />
+            <div class="fromTo d-flex">
+              <div class="from">
+                <h3>From</h3>
+                <br />
+                <input type="date" id="myDate" value="" />
+
+                <br /><br /><br />
+                <h3>With Pay No. of Days</h3>
+                <input type="text" id="numberOfdays" />
+              </div>
+
+              <div class="leave">
+                <h3>To</h3>
+                <br />
+                <input type="date" id="myDate" value="" />
+                <br /><br /><br />
+                <h3>Without Pay No. of Days</h3>
+                <input type="text" id="numberOfdays" />
+              </div>
+            </div>
+
+            <br /><br /><br />
+            <div class="attachReason d-flex">
+              <div class="attachment">
+                <h3>File Attachment:</h3>
+                <br />
+                <form id="fileAttach">
+                  <label for="file-input">
+                    <em
+                      >(3mb maximum file size, allowed file types: jpg, png,
+                      odc, pdf)</em
+                    >
+                  </label>
+                  <br />
+                  <input type="file" id="file-input" />
+                </form>
+              </div>
+              <div>
+                <h3>Reason:</h3>
+                <label for="reason"></label><br />
+                <textarea
+                  name="reason"
+                  id="reason"
+                  cols="30"
+                  rows="5"
+                  placeholder="Type your reason here..."
+                ></textarea>
+              </div>
+            </div>
+            <br /><br /><br />
+            <div class="dateOptions d-flex">
+              <div class="dateDisplay">
+                <h3>Date</h3>
+                <p id="dates"></p>
+              </div>
+              <div>
+                <h3>Options</h3>
+                <form>
+                  <label for="WholeDay">Whole day</label>
+                  <input
+                    type="radio"
+                    id="WholeDay"
+                    name="color"
+                    value="WholeDay"
+                    checked
+                  />
+
+                  <label for="HalfDay">Half day</label>
+                  <input
+                    type="radio"
+                    id="HalfDay"
+                    name="color"
+                    value="HalfDay"
+                  />
+                </form>
+              </div>
+            </div>
+
+            <br /><br /><br />
+            <div class="submitButton d-flex">
+              <form class="submitBtn d-inline-flex">
+                <input
+                  type="submit"
+                  value="Apply"
+                  style="
+                    background-color: teal;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 100px;
+                  "
+                />
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -134,5 +245,9 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const d = new Date();
+      document.getElementById("dates").innerHTML = d;
+    </script>
   </main>
 </html>

@@ -204,15 +204,30 @@
               </div>
               <div class="card-body">
                 <h5 class="card-title">Hello There!</h5>
-                <p class="card-text">
+                <p class="card-text mb-3">
                   We hope you don't have any attendance related discrepancies.
                   But if you do, you can sort them out by clicking the button.
-                  <br /><br /><br />
-                  <a href="#" class="btn btn-info">Visit Resolution Center</a>
-                  <br /><br /><br />
-                  Or you may go to <strong>My Team</strong> -> Resolution
-                  Center.
                 </p>
+
+                <div class="resoctr d-flex justify-content-center">
+                  <div>
+                    <img
+                      class="solutionImg ms-5 me-5"
+                      src="./images/solution.jpg"
+                      alt="solution picture"
+                    />
+                  </div>
+                  <div>
+                    <p>
+                      <a href="#" class="btn btn-info ms-5 mt-4 mb-5"
+                        >Visit Resolution Center</a
+                      >
+                      <br />
+                      Or you may go to <strong>My Team</strong> -> Resolution
+                      Center.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -231,6 +246,7 @@
                     <div class="dropdown">
                       <a
                         class="btn btn-light dropdown-toggle"
+                        id="apply-btn"
                         href="#"
                         role="button"
                         data-bs-toggle="dropdown"
@@ -242,26 +258,35 @@
 
                       <ul class="dropdown-menu">
                         <li>
-                          <a class="dropdown-item" href="leave.html">Leave</a>
+                          <a
+                            class="dropdown-item"
+                            href="leave.html"
+                            id="apply-dropdown"
+                            >Leave</a
+                          >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Overtime</a>
+                          <a class="dropdown-item" href="#" id="apply-dropdown"
+                            >Overtime</a
+                          >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#">Undertime</a>
+                          <a class="dropdown-item" href="#" id="apply-dropdown"
+                            >Undertime</a
+                          >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#"
+                          <a class="dropdown-item" href="#" id="apply-dropdown"
                             >Official Business</a
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#"
+                          <a class="dropdown-item" href="#" id="apply-dropdown"
                             >Schedule Adjustment</a
                           >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="#"
+                          <a class="dropdown-item" href="#" id="apply-dropdown"
                             >Certificate of Attendance</a
                           >
                         </li>

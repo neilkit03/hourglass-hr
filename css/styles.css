@@ -6,6 +6,10 @@
   font-size: 10px;
 }
 
+/* main {
+  background: radial-gradient(circle, #4568dc, #b06ab3, #4568dc);
+} */
+
 .border {
   border-bottom: 1px solid hsl(233, 8%, 79%);
   padding-bottom: 1px;
@@ -16,9 +20,53 @@
   background-color: rgb(33, 29, 29);
 }
 
+.navbar-brand:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
 .hr-logo {
   text-decoration: none;
   color: white;
+}
+.hr-logo:hover {
+  color: yellow;
 }
 
 a.nav-link {
@@ -30,10 +78,92 @@ a.nav-link {
   color: yellow;
 }
 
+.nav-link:focus {
+  color: yellow;
+}
+
 .card {
   max-height: 100;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.solutionImg {
+  height: 150px;
+  width: 200px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .stretched-link:hover {
   color: red;
+}
+
+#apply-btn {
+  color: teal;
+  /* font-weight: bold; */
+}
+
+#apply-dropdown {
+  color: teal;
+}
+
+#apply-dropdown:hover {
+  color: white;
+  background-color: teal;
+}
+
+/* leave Form */
+
+.infoBox-sub1 {
+  width: 300px;
+  font-size: 20px;
+  margin-right: 10px;
+  padding-left: 15px;
+}
+
+.infoBox-sub2 {
+  width: 950px;
+  padding-left: 5px;
+  margin: 5px;
+}
+
+.selectpicker {
+  width: 300px;
+  height: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 25px;
+}
+
+.from {
+  margin-right: 300px;
+}
+
+#myDate {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+}
+
+#numberOfdays {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  width: 260px;
+}
+
+.attachment {
+  margin-right: 150px;
+}
+
+.dateDisplay {
+  margin-right: 110px;
+}
+
+.submitButton {
+  justify-content: end;
+  margin-right: 55px;
+  margin-bottom: 10px;
 }
