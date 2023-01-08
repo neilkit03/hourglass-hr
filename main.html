@@ -52,6 +52,19 @@
                 <a class="nav-link active" aria-current="page" href="#"></a>
               </li>
 
+              <!-- search bar -->
+              <div>
+                <form class="d-flex me-5 pe-1" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+              </div>
+
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -106,18 +119,51 @@
             </ul>
           </div>
 
-          <!-- search bar -->
-          <div>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+          <!-- dropdown pic -->
+          <li class="nav-item dropdown pb-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./images/wed-Headshot.jpg"
+                width="40"
+                height="40"
+                class="rounded-circle"
               />
-              <button class="btn btn-primary" type="submit">Search</button>
-            </form>
-          </div>
+              Wednesday
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">My Profile</a></li>
+              <li>
+                <a class="dropdown-item" href="#">My Attendance</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">My Biolog</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Help</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Change Password</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Privacy Policy</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">Terms of Service</a>
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="#">Log out</a>
+              </li>
+            </ul>
+          </li>
         </div>
       </nav>
     </header>
@@ -130,6 +176,7 @@
                 class="card-header text-light text-bg-info p-3 d-inline-flex justify-content-between"
               >
                 <h5 id="dayOfTheWeek"></h5>
+                <img src="./images/calendar.svg" alt="" />
                 <h5 id="date"></h5>
               </div>
               <div class="card-body">
@@ -149,7 +196,10 @@
                 style="background-color: violet"
               >
                 My Attendance
-                <div><img src="./images/clock.svg" alt="" /></div>
+                <div>
+                  <img src="./images/clock.svg" alt="" />
+                </div>
+                <!-- <i class="fa-solid fa-business-time"></i> -->
               </div>
               <div class="card-body">
                 <h5 class="card-title"></h5>
@@ -171,7 +221,7 @@
             <div class="card">
               <div class="card-header .text-light fw-bold p-3">
                 InstaLoan
-                <img src="./images/lightning (1).svg" alt="lightning icon" />
+                <img src="./images/lightning.svg" alt="lightning icon" />
               </div>
               <div class="card-body">
                 <h5 class="card-title">Need Cash?</h5>
@@ -185,7 +235,7 @@
                   >
                 </p>
                 <div class="d-flex flex-row-reverse">
-                  <a href="#" class="btn btn-info">Get Cash</a>
+                  <a href="#" class="btn btn-info">Loan now</a>
                 </div>
               </div>
             </div>

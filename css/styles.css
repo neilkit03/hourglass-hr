@@ -102,6 +102,12 @@ a.nav-link {
   /* font-weight: bold; */
 }
 
+#apply-btn:hover {
+  color: white;
+  background-color: teal;
+  /* font-weight: bold; */
+}
+
 #apply-dropdown {
   color: teal;
 }
@@ -109,6 +115,11 @@ a.nav-link {
 #apply-dropdown:hover {
   color: white;
   background-color: teal;
+}
+
+.btn-info {
+  color: white;
+  background-color: #1778f2;
 }
 
 /* leave Form */
