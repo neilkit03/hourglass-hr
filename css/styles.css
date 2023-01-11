@@ -97,6 +97,8 @@ a.nav-link {
   color: red;
 }
 
+/* my stuff */
+
 #apply-btn {
   color: teal;
   /* font-weight: bold; */
@@ -184,4 +186,60 @@ a.nav-link {
   justify-content: end;
   margin-right: 55px;
   margin-bottom: 10px;
+}
+
+/* profile-basic Information */
+.Infoprofilepic {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.basicInfo {
+  color: white;
+  background-color: #1778f2;
+  height: 60px;
+  padding-left: 25px;
+}
+
+.lowerline {
+  background-color: #1778f2;
+  height: 50px;
+  margin-top: 20px;
+}
+
+#name,
+#sysid,
+#empid {
+  pointer-events: none;
+}
+
+#name:hover {
+  cursor: not-allowed;
+}
+
+/* my attendance */
+
+#myDateAttendance {
+  width: 780px;
+  border-top: 5px;
+  border-left: 5px;
+  border-right: 5px;
+}
+
+/* overtime */
+
+.appinfo {
+  font-size: 20px;
+}
+
+.overtimetext {
+  color: black;
+  font-weight: bold;
+}
+
+.overtimetext2 {
+  color: black;
+}
+
+.overtimetext3 {
+  color: lightgray;
 }
