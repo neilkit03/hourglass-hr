@@ -138,7 +138,7 @@
             </a>
             <ul class="dropdown-menu">
               <li>
-                <a class="dropdown-item" href="#">My Profile</a>
+                <a class="dropdown-item" href="./profile.html">My Profile</a>
               </li>
               <li>
                 <a class="dropdown-item" href="./myattendance.html"
@@ -160,7 +160,7 @@
                 >
               </li>
               <li>
-                <a class="dropdown-item" href="./terms.html"
+                <a class="dropdown-item" href="./terms-of-sevice.html"
                   >Terms of Service</a
                 >
               </li>
@@ -223,23 +223,158 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
-            <div class="row appinfo mb-2 ms-2">
-              <p>
-                <span class="overtimetext">Shift </span><br /><br /><span
-                  class="overtimetext2"
-                >
-                  03:00 PM To 12:00 AM</span
-                >
-              </p>
+          <!-- second to Fifth column -->
+          <div class="col">
+            <div class="row">
+              <div class="col-3">
+                <div class="row appinfo mb-2 ms-2">
+                  <p>
+                    <span class="overtimetext">Shift </span><br /><br /><span
+                      class="overtimetext2"
+                    >
+                      03:00 PM To 12:00 AM</span
+                    >
+                  </p>
+                </div>
+                <div class="row appinfo mb-2 ms-2">
+                  <p>
+                    <span class="overtimetext">Day </span><br /><br /><span>
+                      <h5 class="overtimetext3" id="dayOfTheWeek"></h5
+                    ></span>
+                  </p>
+                  <hr />
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="row appinfo mb-2 ms-2 ps-2">
+                  <p>
+                    <span class="overtimetext">Biometric Logs </span
+                    ><br /><br /><span class="overtimetext2"> NO LOGS</span>
+                  </p>
+                </div>
+                <div class="row appinfo mb-2 ms-2 ps-2">
+                  <p>
+                    <span class="overtimetext">Shift Date: </span><br /><br />
+
+                    <input type="date" id="ShiftDate" value="" />
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="col-3">
+                <div class="row appinfo mb-2 ms-2 ps-2">
+                  <p>
+                    <span class="overtimetext">OT </span><br /><br /><span
+                      class="overtimetext2"
+                    >
+                      NO OT</span
+                    >
+                  </p>
+                </div>
+                <div class="row appinfo mb-2 ms-2 ps-2">
+                  <p>
+                    <span class="overtimetext">Shift from: </span
+                    ><br /><br /><span class="overtimetext3"> 08:00 AM</span>
+                  </p>
+                </div>
+                <hr />
+              </div>
+              <div class="col-2">
+                <div class="row appinfo mb-2 ms-2 ps-2">
+                  <p>
+                    <span class="overtimetext">OT Minutes </span
+                    ><br /><br /><span class="overtimetext2"> 0</span>
+                  </p>
+                </div>
+                <div class="row appinfo mb-2 ms-2 ps-2">
+                  <p>
+                    <span class="overtimetext">To: </span><br /><br /><span
+                      class="overtimetext3"
+                    >
+                      05:00 PM</span
+                    >
+                  </p>
+                </div>
+                <hr />
+              </div>
             </div>
-            <div class="row appinfo mb-2 ms-2">
-              <p>
-                <span class="overtimetext">Day </span><br /><br /><span>
-                  <h5 class="overtimetext3" id="dayOfTheWeek"></h5
-                ></span>
-              </p>
-              <hr />
+            <div class="row"><h4>Pre-Approved Overtime Hours:</h4></div>
+            <div class="row">
+              <div class="col-3">
+                <div class="row appinfo mb-2 ms-2 mt-5">
+                  <p>
+                    <span class="overtimetext">OT Classification: </span
+                    ><br /><br />
+                    <select
+                      class="selectpicker"
+                      data-style="btn-primary"
+                      id="OTClass"
+                      style="text-decoration: none"
+                    >
+                      <option>Normal OT</option>
+                      <option>Early OT</option>
+                    </select>
+                  </p>
+                  <hr />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row appinfo mb-2 ms-5 mt-5 ps-5">
+                  <p>
+                    <span class="overtimetext">Start: </span><br /><br />
+                    <br />
+                    <input
+                      type="time"
+                      style="border-style: none; width: 300px"
+                    />
+                  </p>
+                  <hr />
+                </div>
+              </div>
+              <div class="col-4">
+                <div class="row appinfo mb-2 ms-5 mt-5 ps-5">
+                  <p>
+                    <span class="overtimetext">End: </span><br /><br />
+                    <br />
+                    <input
+                      type="time"
+                      style="border-style: none; width: 300px"
+                    />
+                  </p>
+                  <hr />
+                </div>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <h5 class="overtimetext">
+                Indicate Ticket Number (If Applicable) and Reason
+              </h5>
+              <textarea
+                name="ticketreason"
+                id="ticketreason"
+                cols="30"
+                rows="3"
+              ></textarea>
+            </div>
+            <hr />
+            <div
+              class="applybtnforOT mt-5 pe-5 pb-5 pt-3 d-flex"
+              style="justify-content: end"
+            >
+              <form class="submitBtn d-inline-flex">
+                <input
+                  type="submit"
+                  value="Apply"
+                  style="
+                    background-color: #1778f2;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    height: 30px;
+                    width: 100px;
+                  "
+                />
+              </form>
             </div>
           </div>
         </div>
