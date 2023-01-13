@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project 1</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <main>
+    <header class="container mb-5 mt-2">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand mt-3 ms-2" href="#"
+            ><img
+              src="./images/hourglass logo2.png"
+              alt="logo"
+              width="200"
+              height="100"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--  end of logo  -->
+          <a class="hr-logo" href="./main.html"
+            ><h1><strong>|HR</strong></h1></a
+          >
+
+          <div
+            class="collapse navbar-collapse d-flex"
+            id="navbarSupportedContent"
+          >
+            <div class="flex-grow-1"></div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item d-inline-flex">
+                <a class="nav-link active" aria-current="page" href="#"></a>
+              </li>
+
+              <!-- search bar -->
+              <div>
+                <form class="d-flex me-5 pe-1" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+              </div>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Request
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">My Leaves</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >My Certificates of Attendance</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >My Schedule Adjustments</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">My Overtimes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">My Undertimes</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >My Official Businessess</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Administration tools
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Attendance Report</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- dropdown pic -->
+          <li class="nav-item dropdown pb-4">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="./images/headshot.png"
+                width="40"
+                height="40"
+                class="rounded-circle"
+              />
+              Neil
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="./profile.html">My Profile</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./myattendance.html"
+                  >My Attendance</a
+                >
+              </li>
+
+              <li><hr class="dropdown-divider" /></li>
+
+              <li>
+                <a class="dropdown-item" href="./change-password.html"
+                  >Change Password</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="./privacy-policy-1.html"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./terms-of-sevice.html"
+                  >Terms of Service</a
+                >
+              </li>
+              <li><hr class="dropdown-divider" /></li>
+              <li>
+                <a class="dropdown-item" href="./index.html">Log out</a>
+              </li>
+            </ul>
+          </li>
+        </div>
+      </nav>
+    </header>
+    <body>
+      <div class="container-fluid">
+        <div class="row ps-5 pe-5 mb-2">
+          <div class="col ps-4">
+            <h2>Certificates Of Attendance Application Form</h2>
+          </div>
+          <hr />
+        </div>
+        <div class="row">
+          <div class="col-4">
+            <div class="row ps-5 pe-5">
+              <div class="overtimetext">
+                <h3>Type</h3>
+                <select
+                  class="selectpicker"
+                  data-style="btn-primary"
+                  style="width: 500px"
+                >
+                  <option>Biometric Malfunction</option>
+                  <option>Power Outage</option>
+                  <option>Others</option>
+                </select>
+              </div>
+              <div class="row mt-3">
+                <h5 class="overtimetext">Reason</h5>
+                <textarea
+                  name="ticketreason"
+                  id="ticketreason"
+                  cols="30"
+                  rows="3"
+                ></textarea>
+              </div>
+              <hr />
+            </div>
+          </div>
+          <!-- space -->
+          <!-- <div class="col-1"></div> -->
+          <!-- space -->
+          <div class="col-6 mt-5">
+            <div class="row mb-5" style="border:height: 150px">
+              <p style="font-size: 30px; color: darkslategrey">Note:</p>
+              <br />
+              <p style="font-size: 20px; color: darkslategrey">
+                If you add value in a time field without indicating
+                <strong>AM/PM </strong> the system will read it as military
+                time.
+              </p>
+            </div>
+            <div class="row" style="height: 150px">
+              <div class="col-4">
+                <div class="overtimetext">
+                  <h4>Type</h4>
+                  <select class="selectpicker" data-style="btn-primary">
+                    <option>In</option>
+                    <option>Out</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-4">
+                <p>
+                  <span class="overtimetext" style="font-size: 22px"
+                    >Date: </span
+                  ><br /><br />
+
+                  <input
+                    type="date"
+                    id="ShiftDate"
+                    value=""
+                    style="width: 300px"
+                  />
+                </p>
+                <hr />
+              </div>
+              <div class="col-4">
+                <p>
+                  <span class="overtimetext" style="font-size: 21px">Time </span
+                  ><br />
+                  <br />
+                  <input type="time" style="border-style: none; width: 315px" />
+                </p>
+                <hr />
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="applybtnforOT mt-5 pe-5 pb-5 pt-3 d-flex"
+                style="justify-content: end"
+              >
+                <form class="submitBtn d-inline-flex">
+                  <input
+                    type="submit"
+                    value="Submit"
+                    style="
+                      background-color: #1778f2;
+                      color: white;
+                      border: none;
+                      border-radius: 5px;
+                      height: 30px;
+                      width: 100px;
+                    "
+                  />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      const days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      const d = new Date();
+      let day = days[d.getDay()];
+      document.getElementById("dayOfTheWeek").innerHTML = day;
+    </script>
+  </main>
+</html>
