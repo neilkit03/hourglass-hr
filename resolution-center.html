@@ -181,90 +181,94 @@
           </div>
           <hr />
         </div>
-        <div class="row">
+
+        <div class="row mb-5">
           <div class="col-4">
             <div class="row ps-5 pe-5">
-              <div class="overtimetext">
-                <h3>Type</h3>
-                <select
-                  class="selectpicker"
-                  data-style="btn-primary"
-                  style="width: 500px"
+              <p>
+                <span style="font-size: 30px; color: grey"
+                  >Narrow your results</span
                 >
-                  <option>Biometric Malfunction</option>
-                  <option>Power Outage</option>
-                  <option>Others</option>
-                </select>
-              </div>
-              <div class="row mt-3">
-                <h5 class="overtimetext">Reason</h5>
-                <textarea
-                  name="ticketreason"
-                  id="ticketreason"
-                  cols="30"
-                  rows="3"
-                ></textarea>
-              </div>
-              <hr />
-            </div>
-          </div>
-          <!-- space -->
-          <!-- <div class="col-1"></div> -->
-          <!-- space -->
-          <div class="col-6 mt-5">
-            <div class="row mb-5" style="border:height: 150px">
-              <p style="font-size: 30px; color: darkslategrey">Note:</p>
-              <br />
-              <p style="font-size: 20px; color: darkslategrey">
-                If you add value in a time field without indicating
-                <strong>AM/PM </strong> the system will read it as military
-                time.
               </p>
-            </div>
-            <div class="row" style="height: 150px">
-              <div class="col-4">
-                <div class="overtimetext">
-                  <h4>Type</h4>
-                  <select class="selectpicker" data-style="btn-primary">
-                    <option>In</option>
-                    <option>Out</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-4">
+
+              <div class="overtimetext">
                 <p>
                   <span class="overtimetext" style="font-size: 22px"
-                    >Date: </span
+                    >Date From</span
                   ><br /><br />
 
                   <input
                     type="date"
                     id="ShiftDate"
                     value=""
-                    style="width: 300px"
+                    style="width: 400px; border-style: solid; height: 40px"
                   />
                 </p>
-                <hr />
               </div>
-              <div class="col-4">
+              <div class="row mt-3">
                 <p>
-                  <span class="overtimetext" style="font-size: 21px">Time </span
-                  ><br />
-                  <br />
-                  <input type="time" style="border-style: none; width: 315px" />
+                  <span class="overtimetext" style="font-size: 22px"
+                    >Date To</span
+                  ><br /><br />
+
+                  <input
+                    type="date"
+                    id="ShiftDate"
+                    value=""
+                    style="width: 400px; border-style: solid; height: 40px"
+                  />
                 </p>
-                <hr />
-              </div>
-            </div>
-            <div class="row">
-              <div
-                class="applybtnforOT mt-5 pe-5 pb-5 pt-3 d-flex"
-                style="justify-content: end"
-              >
+
+                <p>
+                  <span
+                    class="overtimetext"
+                    style="font-size: 22px; color: grey"
+                    >Type</span
+                  >
+                </p>
+
+                <form
+                  action="/action_page.php"
+                  style="font-size: 20px; color: grey"
+                >
+                  <input type="checkbox" id="resolution1" name="" value="" />
+                  <label for="Missing Log"> Missing Logs </label><br />
+                  <input type="checkbox" id="resolution2" name="" value="" />
+                  <label for="Schedule Conflict"> Schedule Conflict</label
+                  ><br />
+                  <input type="checkbox" id="resolution3" name="" value="" />
+                  <label for="Half Day Leave Undertime">
+                    Half Day Leave Undertime</label
+                  ><br />
+                  <input type="checkbox" id="resolution4" name="" value="" />
+                  <label for="On Leave but with Logs">
+                    On Leave but with Logs</label
+                  ><br />
+                  <input type="checkbox" id="resolution5" name="" value="" />
+                  <label for="Holiday/Rest Day but with Logs">
+                    Holiday/Rest Day but with Logs</label
+                  ><br />
+                  <input type="checkbox" id="resolution6" name="" value="" />
+                  <label for="Possible Overtime"> Possible Overtime</label
+                  ><br />
+                  <input type="checkbox" id="resolution7" name="" value="" />
+                  <label for="Early In"> Early In</label><br />
+                  <input type="checkbox" id="resolution8" name="" value="" />
+                  <label for="Possible Broken Shift">
+                    Possible Broken Shift</label
+                  ><br />
+                  <input type="checkbox" id="resolution9" name="" value="" />
+                  <label for="Possible Undertime"> Possible Undertime</label
+                  ><br />
+                  <input type="checkbox" id="resolution10" name="" value="" />
+                  <label for="Incomplete Logs"> Incomplete Logs</label><br />
+                  <br />
+                </form>
+
                 <form class="submitBtn d-inline-flex">
                   <input
                     type="submit"
-                    value="Submit"
+                    value="Apply Filter"
                     style="
                       background-color: #1778f2;
                       color: white;
@@ -276,6 +280,21 @@
                   />
                 </form>
               </div>
+            </div>
+          </div>
+          <!-- space -->
+          <!-- <div class="col-1"></div> -->
+          <!-- space -->
+          <div class="col-6 mt-5">
+            <div
+              class="row mb-5 pt-4 ps-3"
+              style="height: 150px; background-color: lightgray"
+            >
+              <p style="font-size: 20px; color: darkslategrey">
+                What can we help you find. Please enter your criteria on the
+                left and click the
+                <strong>Apply Filter</strong> Button.
+              </p>
             </div>
           </div>
         </div>
